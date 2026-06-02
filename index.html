@@ -1288,10 +1288,10 @@
     <span></span><span></span><span></span>
   </button>
   <ul>
-    <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
     <li><a href="#colecciones" data-i18n="nav.colecciones">Colecciones</a></li>
     <li><a href="#proceso" data-i18n="nav.proceso">Proceso</a></li>
     <li><a href="#miradas" data-i18n="nav.miradas">Miradas</a></li>
+    <li><a href="#sobre" data-i18n="nav.sobre">Sobre</a></li>
     <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
   </ul>
   <div class="idiomas">
@@ -1319,35 +1319,6 @@
   <div class="hero-firma">
     <span data-i18n="hero.firma">una locura cosida despacio</span>
     <span class="scroll-dot"></span>
-  </div>
-</section>
-
-<!-- MANIFIESTO (intencionalmente políglota — no se traduce) -->
-<section class="manifiesto">
-  <p>La pazzia è un viaggio verso il bello.</p>
-  <p>Beauty only becomes eternal when someone looks at it.</p>
-  <p>MATTA es el camino entre las dos cosas.</p>
-  <p>E il cammino non finisce mai.</p>
-  <p class="firma-angela">— Angela</p>
-</section>
-
-<!-- SOBRE -->
-<section class="sobre" id="sobre" data-plano="negro">
-  <div class="seccion-titulo">
-    <span class="eyebrow" data-i18n="sobre.eyebrow">Sobre</span>
-    <h2 data-i18n="sobre.h2">Angela Cammarota Pérez.</h2>
-  </div>
-  <div class="sobre-grid">
-    <div class="retrato-wrap">
-      <img src="fotoangela.png" alt="Angela Cammarota Pérez">
-    </div>
-    <div>
-      <p data-i18n="sobre.p1">Joven diseñadora italo-española. Empezó en Central Saint Martins con la Foundation en diseño y textil (distinción), siguió un año en el Istituto Marangoni Milano — donde fue finalista de la capsule Missoni y desarrolló su proyecto junto a Luca Missoni y Alberto Caliri — y hoy continúa en la University of Westminster con un enfoque más experimental.</p>
-      <p class="destacado" data-i18n="sobre.destacado">Piensa en polifonía — cuatro idiomas, cinco culturas, una sola mano.</p>
-      <p data-i18n="sobre.p2">Su fuerte es la experimentación con técnicas diferentes, donde mezcla arte y moda. Corta patrones planos y los rompe sobre maniquí, aplica resina sobre tela para convertirla en arquitectura, imprime en serigrafía, drapea, borda, manipula superficies textiles. La tela, en sus manos, no es solo prenda: es material expresivo. Del oficio italiano del lujo aprende rigor; del experimentalismo londinense, libertad.</p>
-      <p data-i18n="sobre.p3">Es perfeccionista, libre y persistente. Una pieza suya, cuando ya está hecha, no se cierra: se vuelve materia para la siguiente. Cada obra es punto de partida de la próxima experimentación.</p>
-      <p class="firma-sobre">— Angela</p>
-    </div>
   </div>
 </section>
 
@@ -1421,6 +1392,35 @@
   </div>
   <p class="miradas-pista" data-i18n="miradas.pista">↓ acércate a una imagen · arrástrala · busca su palabra</p>
   <div class="mesa" id="mesa"></div>
+</section>
+
+<!-- MANIFIESTO (intencionalmente políglota — no se traduce) -->
+<section class="manifiesto">
+  <p>La pazzia è un viaggio verso il bello.</p>
+  <p>Beauty only becomes eternal when someone looks at it.</p>
+  <p>MATTA es el camino entre las dos cosas.</p>
+  <p>E il cammino non finisce mai.</p>
+  <p class="firma-angela">— Angela</p>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre" data-plano="negro">
+  <div class="seccion-titulo">
+    <span class="eyebrow" data-i18n="sobre.eyebrow">Sobre</span>
+    <h2 data-i18n="sobre.h2">Angela Cammarota Pérez.</h2>
+  </div>
+  <div class="sobre-grid">
+    <div class="retrato-wrap">
+      <img src="fotoangela.png" alt="Angela Cammarota Pérez">
+    </div>
+    <div>
+      <p data-i18n="sobre.p1">Joven diseñadora italo-española. Empezó en Central Saint Martins con la Foundation en diseño y textil (distinción), siguió un año en el Istituto Marangoni Milano — donde fue finalista de la capsule Missoni y desarrolló su proyecto junto a Luca Missoni y Alberto Caliri — y hoy continúa en la University of Westminster con un enfoque más experimental.</p>
+      <p class="destacado" data-i18n="sobre.destacado">Piensa en polifonía — cuatro idiomas, cinco culturas, una sola mano.</p>
+      <p data-i18n="sobre.p2">Su fuerte es la experimentación con técnicas diferentes, donde mezcla arte y moda. Corta patrones planos y los rompe sobre maniquí, aplica resina sobre tela para convertirla en arquitectura, imprime en serigrafía, drapea, borda, manipula superficies textiles. La tela, en sus manos, no es solo prenda: es material expresivo. Del oficio italiano del lujo aprende rigor; del experimentalismo londinense, libertad.</p>
+      <p data-i18n="sobre.p3">Es perfeccionista, libre y persistente. Una pieza suya, cuando ya está hecha, no se cierra: se vuelve materia para la siguiente. Cada obra es punto de partida de la próxima experimentación.</p>
+      <p class="firma-sobre">— Angela</p>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACTO -->
@@ -2030,19 +2030,16 @@
   // Italiano: essere (la forma natural con "matta")
   // Castellano: estar  ·  Catalán: estar  ·  Inglés: to be
   const sujetos = [
-    // italiano (essere) + musas italianas
+    // italiano (essere)
     "Io sono", "Tu sei", "Lui è", "Lei è", "Noi siamo", "Voi siete", "Loro sono",
-    "Sophia è", "Anna è",
-    // castellano (estar) + musas hispanas
+    // castellano (estar)
     "Yo estoy", "Tú estás", "Él está", "Ella está", "Nosotros estamos", "Vosotras estáis",
-    "Lola está", "Frida está", "Angela está",
-    // catalán (estar) + musa catalana
+    "Ellos están",
+    // catalán (estar)
     "Jo estic", "Tu estàs", "Ell està", "Ella està", "Nosaltres estem", "Vosaltres esteu",
-    "Elles estan", "Salvador està",
-    // inglés (to be) + musa anglosajona
-    "I am", "You are", "He is", "She is", "We are", "They are", "Vivienne is",
-    // multi-cultural
-    "Federico è"
+    "Elles estan",
+    // inglés (to be)
+    "I am", "You are", "He is", "She is", "We are", "They are"
   ];
 
   // ─── Hero — predicados: palabras de Miradas con preposición rotando ─
